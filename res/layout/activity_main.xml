@@ -5,6 +5,12 @@
     android:orientation="horizontal"
     android:paddingTop="?android:attr/actionBarSize" >
 
+    <TextView
+        android:id="@+id/info_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
     <EditText
         android:id="@+id/edit_message"
         android:layout_width="0dp"
@@ -13,6 +19,7 @@
         android:hint="@string/edit_message" />
 
     <Button
+        android:id="@+id/button_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sendMessage"
